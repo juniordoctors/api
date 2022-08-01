@@ -61,7 +61,7 @@ Example:
 
    }
    
-   Review with types:
+   Review Object with types:
    
    {
       review: string
@@ -95,21 +95,10 @@ Example:
      ]
    
    }
-   
-   
-   Review Type:
-   {
-      review: string
-      site: string (name of site in a displayable format)
-      department: string (name of department in a displayable format)
-      programme: string (name of programme in a displayable format)
-      yearPosted: numeric (year review was posted)
-      rating: numeric (rating 0-5)
-      
-   
-   }
   
   ```
+  
+  Invalid Request: 400
   
 #### POST api.juniordoctors.co.uk/public/v1/review
   
@@ -150,5 +139,39 @@ Example request body:
   workHereAgain: true,
   isTest: true
 }
+
 ```
-     
+
+Returns: 
+
+Valid Request: Review Object
+
+Example: 
+
+ ```
+   
+   Review Object with types:
+   
+   {
+      review: string
+      site: string (name of site in a displayable format)
+      department: string (name of department in a displayable format)
+      programme: string (name of programme in a displayable format)
+      yearPosted: numeric (year review was posted)
+      rating: numeric (rating 0-5)
+   }
+   
+   Full Example:
+   
+   { 
+      review: 'I loved this job, was my favourite placement I did. All the consultants we're super supportive and I always
+       left on time, would highly recommend!',
+      site: 'Generic Royal Infirmary',
+      department: 'Anaesthetics',
+      programme: 'Core Anaesthetics',
+      yearPosted: 2022
+      rating: 5,
+      workHereAgain: true
+    }
+   
+   ```
