@@ -2,7 +2,7 @@
 
 ## routes (not live yet)
 
-#### GET api.juniordoctors.co.uk/public/v1/reviews
+#### GET api.juniordoctors.co.uk/public/v1/departmentreviews
 
 Purpose:
 To retrieve reviews for a given department
@@ -100,7 +100,7 @@ Example:
   
   Invalid Request: 400
   
-#### POST api.juniordoctors.co.uk/public/v1/review
+#### POST api.juniordoctors.co.uk/public/v1/departmentreview
   
 Parameters:
     
