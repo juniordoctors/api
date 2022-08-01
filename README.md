@@ -9,7 +9,7 @@ To retrieve reviews for a given department
 
 Parameters:
 
-  **token** (*Mandatory*): Your unique UUID string
+  **key** (*Mandatory*): Your unique UUID string
 
   **site** (*Mandatory*): Unique UUID for the site you are requesting reviews for. Only one site can be included per request
 
@@ -105,7 +105,7 @@ To post a new review
   
 Parameters:
     
-**token** (*Mandatory*): Your unique UUID string
+**key** (*Mandatory*): Your unique UUID string
 
 **site** (*Mandatory*): Unique UUID for the site you are requesting reviews for. Only one site can be included per request
     
@@ -176,3 +176,23 @@ Example:
     }
    
    ```
+   
+  ## Programmes
+  
+  Useful list of programmes to test out
+  
+  Programme Name         | UUID 
+  ---------------------- | -------------------------------------
+  Anaesthetics ST4+      | 1b0b5255-5774-4668-8e72-ca541abe8b6d
+  Core Anaesthetics      | 18f1c796-ac33-47a7-99f3-7fe3f5ef4f8a
+  Foundation Programme   | 18f1c796-ac33-47a7-99f3-7fe3f5ef4f8a
+  Junior Clinical Fellow | 2c040b66-a8b9-4531-a436-78943b1652f8
+  Senior Clinical Fellow | f1bb37cd-d3bc-457a-9b9d-aa6d075a7633
+
+
+ ## Specialities
+ 
+ Speciality Name | UUID
+ ----------------|-------------
+ Anaesthetics    | 63db4685-7c24-409d-b561-6db50fc4ccc2
+  
