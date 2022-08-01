@@ -1,15 +1,16 @@
 # Public Api
 
+**This API is not production ready and maybe subject to breaking changes**
+
 ## Terms of use
 - No unrestricted access. Access is only for approved users. Please do not share your API key.
 - juniordoctors.co.uk must be attributed wherever you are displaying reviews or posting them. 
 - All reviews remain copyright of juniordoctors.co.uk and must not be altered or redistributed except with explicit permission.
 - Any break in terms will result in your API key being revoked
 
-
 ## Request Access
 
-Please DM us on twitter (@juniordoctors_)[https://twitter.com/juniordoctors_]
+Please DM us on twitter [@juniordoctors_](https://twitter.com/juniordoctors_) to obtain an API Key
 
 ## Routes 
 
@@ -20,7 +21,7 @@ To retrieve reviews for a given department
 
 Parameters:
 
-  **key** (*Mandatory*): Your unique UUID string
+  **key** (*Mandatory*): Your unique API Key
 
   **site** (*Mandatory*): Unique UUID for the site you are requesting reviews for. Only one site can be included per request
 
@@ -118,7 +119,7 @@ Submit as JSON `{ review: {REVIEW OBJECT} }`
 
 Review Object Parameters:
     
-**key** (*Mandatory*): Your unique UUID string
+**key** (*Mandatory*): Your unique API Key
 
 **site** (*Mandatory*): Unique UUID for the site you are requesting reviews for. Only one site can be included per request
     
