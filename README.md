@@ -1,6 +1,6 @@
 # public api
 
-## routes (not live yet)
+## routes 
 
 #### GET api.juniordoctors.co.uk/public/v1/departmentreviews
 
