@@ -101,6 +101,9 @@ Example:
   Invalid Request: 400
   
 #### POST api.juniordoctors.co.uk/public/v1/departmentreview
+
+Purpose:
+To post a new review
   
 Parameters:
     
