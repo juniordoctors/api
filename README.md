@@ -23,9 +23,7 @@ Parameters:
     
   **offset** (*Optional - defaults to 0*): Integer value for offsetting reviews returned (for pagination) 
   
-  **!!IMPORTANT!!**    
-        
-  **istest** (*Mandatory - defaults to true*): Boolean. If true will return 200 if valid review and request but will not save the review - useful for testing. Make sure to set to false in production or reviews will not be saved
+
   
   Example:
   
@@ -33,11 +31,11 @@ Parameters:
   
    Generic example:
    
-   https://api.juniordoctors.co.uk/public/v1/reviews?token={**INSERT TOKEN HERE**}&site={**INSERT SITE UUID HERE**}&speciality={**INSERT DEPARTMENT SPECIALITY HERE**}&sortby={**INSERT SORT BY PREFERENCE HERE**}&offsetby={**INSERT OFFSET VALUE HERE**}&istest=true
+   https://api.juniordoctors.co.uk/public/v1/departmentreviews?token={**INSERT TOKEN HERE**}&site={**INSERT SITE UUID HERE**}&speciality={**INSERT DEPARTMENT SPECIALITY HERE**}&sortby={**INSERT SORT BY PREFERENCE HERE**}&offsetby={**INSERT OFFSET VALUE HERE**}&istest=true
    
    Example #1:
    
-   https://api.juniordoctors.co.uk/public/v1/reviews?token=d60c3e80-4e4c-45b5-a4d4-b42ce12059b7&site=d60c3e80-4e4c-45b5-a4d4-b42ce12059b7&speciality=d60c3e80-4e4c-45b5-a4d4-b42ce12059b7&sortby=H&offsetby=0&istest=true
+   https://api.juniordoctors.co.uk/public/v1/departmentreviews?token=d60c3e80-4e4c-45b5-a4d4-b42ce12059b7&site=d60c3e80-4e4c-45b5-a4d4-b42ce12059b7&speciality=d60c3e80-4e4c-45b5-a4d4-b42ce12059b7&sortby=H&offsetby=0&istest=true
   
   ```
   
