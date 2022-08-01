@@ -4,7 +4,8 @@
 
 #### GET api.juniordoctors.co.uk/public/v1/reviews
 
-Full URL string: 
+Purpose:
+To retrieve reviews for a given department
 
 Parameters:
 
@@ -40,6 +41,75 @@ Parameters:
   
   ```
   
+Returns:
+
+Valid Request: Reviews Object
+
+Example: 
+
+ ```
+ 
+   Reviews Object with types:
+   
+   {
+      
+      site: string (name of site in a displayable format),
+      department: string (name of department in a displayable format),
+      averageRating: numeric (average rating for this department - fixed to one decimal place),
+      reviewCount: numeric (total number of reviews available for this department),
+      reviews: Review[]
+
+   }
+   
+   Review with types:
+   
+   {
+      review: string
+      site: string (name of site in a displayable format)
+      department: string (name of department in a displayable format)
+      programme: string (name of programme in a displayable format)
+      yearPosted: numeric (year review was posted)
+      rating: numeric (rating 0-5)
+   }
+  
+   Full Example:
+   
+   {
+    
+      site: 'Generic Royal Infirmary',
+      department: 'Anaesthetics',
+      averageRating: 5.0,
+      reviewCount: 1,
+      reviews: [
+        { 
+         review: 'I loved this job, was my favourite placement I did. All the consultants we're super supportive and I always
+          left on time, would highly recommend!',
+         site: 'Generic Royal Infirmary',
+         department: 'Anaesthetics',
+         programme: 'Core Anaesthetics',
+         yearPosted: 2022
+         rating: 5,
+         workHereAgain: true
+       }
+    
+     ]
+   
+   }
+   
+   
+   Review Type:
+   {
+      review: string
+      site: string (name of site in a displayable format)
+      department: string (name of department in a displayable format)
+      programme: string (name of programme in a displayable format)
+      yearPosted: numeric (year review was posted)
+      rating: numeric (rating 0-5)
+      
+   
+   }
+  
+  ```
   
 #### POST api.juniordoctors.co.uk/public/v1/review
   
