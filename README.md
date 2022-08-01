@@ -9,7 +9,7 @@ To retrieve reviews for a given department
 
 Parameters:
 
-  **token** (*Mandatory*): Your unique UUID string (to request email: hello@juniordoctors.co.uk)
+  **token** (*Mandatory*): Your unique UUID string
 
   **site** (*Mandatory*): Unique UUID for the site you are requesting reviews for. Only one site can be included per request
 
@@ -107,7 +107,7 @@ To post a new review
   
 Parameters:
     
-**token** (*Mandatory*): Your unique UUID string (to request email: hello@juniordoctors.co.uk)
+**token** (*Mandatory*): Your unique UUID string
 
 **site** (*Mandatory*): Unique UUID for the site you are requesting reviews for. Only one site can be included per request
     
