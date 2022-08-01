@@ -103,7 +103,9 @@ Example:
 Purpose:
 To post a new review
   
-Parameters:
+Submit as JSON `{ review: {REVIEW OBJECT} }`
+
+Review Object Parameters:
     
 **key** (*Mandatory*): Your unique UUID string
 
@@ -128,9 +130,8 @@ Parameters:
 ```
 Example request body:
 
-
-{
-  token: 'd60c3e80-4e4c-45b5-a4d4-b42ce12059b7',
+review: {
+  key: 'd60c3e80-4e4c-45b5-a4d4-b42ce12059b7',
   site: '24648cf6-4b60-456c-8b19-1d824dfd0e68',
   speciality: 'cec17531-efc8-47e1-a462-c0d478af526d'
   programme: '77c7af33-2cf5-4405-b2ca-b7799b0b55d2',
