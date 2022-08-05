@@ -14,10 +14,10 @@ Please DM us on twitter [@juniordoctors_](https://twitter.com/juniordoctors_) to
 
 ## Routes 
 
-#### POST api.juniordoctors.co.uk/public/v1/fetchreviews
+#### POST api.juniordoctors.co.uk/public/v1/getreviews
 
 Purpose:
-To retrieve reviews. Will return a maximum of 15 reviews per request. 
+To retrieve reviews. Will return a maximum of 20 reviews per request. 
 
 ```
 Example request body:
