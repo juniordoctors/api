@@ -116,11 +116,11 @@ Parameters:
   
    Generic example:
    
-   https://api.juniordoctors.co.uk/public/v1/departmentreviews?token={**INSERT TOKEN HERE**}&site={**INSERT SITE UUID HERE**}&speciality={**INSERT DEPARTMENT SPECIALITY HERE**}&sortby={**INSERT SORT BY PREFERENCE HERE**}&offsetby={**INSERT OFFSET VALUE HERE**}&istest=true
+   https://api.juniordoctors.co.uk/public/v1/departmentreviews?key={**INSERT KEY HERE**}&site={**INSERT SITE UUID HERE**}&speciality={**INSERT DEPARTMENT SPECIALITY HERE**}&sortby={**INSERT SORT BY PREFERENCE HERE**}&offsetby={**INSERT OFFSET VALUE HERE**}&istest=true
    
    Example #1:
    
-   https://api.juniordoctors.co.uk/public/v1/departmentreviews?token=d60c3e80-4e4c-45b5-a4d4-b42ce12059b7&site=d60c3e80-4e4c-45b5-a4d4-b42ce12059b7&speciality=d60c3e80-4e4c-45b5-a4d4-b42ce12059b7&sortby=H&offsetby=0&istest=true
+   https://api.juniordoctors.co.uk/public/v1/departmentreviews?key=d60c3e80-4e4c-45b5-a4d4-b42ce12059b7&site=d60c3e80-4e4c-45b5-a4d4-b42ce12059b7&speciality=d60c3e80-4e4c-45b5-a4d4-b42ce12059b7&sortby=H&offsetby=0&istest=true
   
   
   Response Examples:
