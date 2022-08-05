@@ -14,6 +14,78 @@ Please DM us on twitter [@juniordoctors_](https://twitter.com/juniordoctors_) to
 
 ## Routes 
 
+#### POST api.juniordoctors.co.uk/public/v1/fetchreviews
+
+Purpose:
+To retrieve reviews. Will return a maximum of 15 reviews per request. 
+
+```
+Example request body:
+
+Request body with types: 
+
+ review: {
+   key: UUID
+   sites: UUID[]
+   specialities: UUID[]
+   sortBy: String
+   offset: Number
+ }
+ 
+Request body real example:
+
+review: {
+  key: 'd60c3e80-4e4c-45b5-a4d4-b42ce12059b7',
+  sites: ['24648cf6-4b60-456c-8b19-1d824dfd0e68'],
+  specialities: ['cec17531-efc8-47e1-a462-c0d478af526d', 'dec17531-efc8-47e1-a462-c0d478af526d']
+  sortBy: 'T',
+  offset: 20 
+}
+
+
+Example 200 response body:
+
+ {
+
+    averageRating: 5.0,
+    reviewCount: 1,
+    reviews: [
+      { 
+       review: 'I loved this job, was my favourite placement I did. All the consultants we're super supportive and I always
+        left on time, would highly recommend!',
+       site: 'Generic Royal Infirmary',
+       department: 'Anaesthetics',
+       programme: 'Core Anaesthetics',
+       yearPosted: 2022
+       rating: 5,
+       workHereAgain: true,
+       reviewType: 'D'
+     }
+
+   ]
+
+ }
+
+```
+
+Parameters:
+
+  **key** (*Mandatory*): UUID. Your unique API Key
+
+  **sites** (*Mandatory*): UUID[]. An array of site UUIDs for which reviews will be retrieved for. Maximum 10 sites. 
+
+  **specialities** (*Mandatory*): UUID[]. An array of speciality UUIDs you are requesting reviews for. Maximum 2 specialities.
+  
+  **sortby** (*Optional - defaults to "T"*): String 
+     Options include:
+       - "T" (sorts reviews by most recent first)
+       - "H" (sorts reviews by highest rated first)
+       - "L" (sort reviews by lowest rated first)
+    
+  **offset** (*Optional - defaults to 0*): Integer. Value for offsetting reviews returned (for pagination) 
+  
+
+
 #### GET api.juniordoctors.co.uk/public/v1/departmentreviews
 
 Purpose:
@@ -40,6 +112,7 @@ Parameters:
   Example:
   
   ```
+  Request Examples:
   
    Generic example:
    
@@ -49,17 +122,47 @@ Parameters:
    
    https://api.juniordoctors.co.uk/public/v1/departmentreviews?token=d60c3e80-4e4c-45b5-a4d4-b42ce12059b7&site=d60c3e80-4e4c-45b5-a4d4-b42ce12059b7&speciality=d60c3e80-4e4c-45b5-a4d4-b42ce12059b7&sortby=H&offsetby=0&istest=true
   
+  
+  Response Examples:
+  
+   Full Example:
+   
+   
+   {
+    
+      site: 'Generic Royal Infirmary',
+      department: 'Anaesthetics',
+      averageRating: 5.0,
+      reviewCount: 1,
+      reviews: [
+        { 
+         review: 'I loved this job, was my favourite placement I did. All the consultants we're super supportive and I always
+          left on time, would highly recommend!',
+         site: 'Generic Royal Infirmary',
+         department: 'Anaesthetics',
+         programme: 'Core Anaesthetics',
+         yearPosted: 2022
+         rating: 5,
+         workHereAgain: true,
+         type: 'D'
+       }
+    
+     ]
+   
+   }
+  
+  
   ```
   
 Returns:
 
 Valid Request: Reviews Object
 
-Example: 
+Return object types: 
 
  ```
  
-   Reviews Object with types:
+   Department Reviews Object with types:
    
    {
       
@@ -80,31 +183,10 @@ Example:
       programme: string (name of programme in a displayable format)
       yearPosted: numeric (year review was posted)
       rating: numeric (rating 0-5)
+      type: string ('D' for department review, 'P' for programme review)
    }
   
-   Full Example:
-   
-   {
-    
-      site: 'Generic Royal Infirmary',
-      department: 'Anaesthetics',
-      averageRating: 5.0,
-      reviewCount: 1,
-      reviews: [
-        { 
-         review: 'I loved this job, was my favourite placement I did. All the consultants we're super supportive and I always
-          left on time, would highly recommend!',
-         site: 'Generic Royal Infirmary',
-         department: 'Anaesthetics',
-         programme: 'Core Anaesthetics',
-         yearPosted: 2022
-         rating: 5,
-         workHereAgain: true
-       }
-    
-     ]
-   
-   }
+  
   
   ```
   
