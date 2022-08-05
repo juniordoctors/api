@@ -273,12 +273,14 @@ Example:
    ```
    
    
-#### POST api.juniordoctors.co.uk/public/v1/reviewreport
+#### POST api.juniordoctors.co.uk/public/v1/reportreview 
 
 Purpose:
 To report a review for abuse
 
 Parameters:
+
+**key** (*Mandatory*): Your unique API Key
     
 **review** (*Mandatory*): UUID. Review ID for the review being reported.
 
