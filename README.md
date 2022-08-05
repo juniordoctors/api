@@ -272,6 +272,26 @@ Example:
    
    ```
    
+   
+#### POST api.juniordoctors.co.uk/public/v1/reviewreport
+
+Purpose:
+To report a review for abuse
+
+Parameters:
+    
+**review** (*Mandatory*): UUID. Review ID for the review being reported.
+
+**reason** (optional): String. Text explaining the reason for the report. 
+ 
+Response:
+
+Success 200. No data returned
+
+Unsuccessful 400
+
+
+   
   ## Programmes
   
   Useful list of programmes to test out
@@ -290,4 +310,5 @@ Example:
  Speciality Name | UUID
  ----------------|-------------
  Anaesthetics    | 63db4685-7c24-409d-b561-6db50fc4ccc2
+ Intensive Care Medicine | a7cb4b5f-cd14-49fa-9995-1499856d8e8e
   
