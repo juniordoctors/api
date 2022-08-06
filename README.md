@@ -24,7 +24,7 @@ Example request body:
 
 Request body with types: 
 
- review: {
+{
    key: UUID
    sites: UUID[]
    specialities: UUID[]
@@ -34,7 +34,7 @@ Request body with types:
  
 Request body real example:
 
-review: {
+{
   key: 'd60c3e80-4e4c-45b5-a4d4-b42ce12059b7',
   sites: ['24648cf6-4b60-456c-8b19-1d824dfd0e68'],
   specialities: ['cec17531-efc8-47e1-a462-c0d478af526d', 'dec17531-efc8-47e1-a462-c0d478af526d']
