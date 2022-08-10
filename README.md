@@ -30,6 +30,7 @@ Request body with types:
    specialities: UUID[]
    sortBy: String
    offset: Number
+   noOfReviews: Number
  }
  
 Request body real example:
@@ -39,7 +40,8 @@ Request body real example:
   sites: ['24648cf6-4b60-456c-8b19-1d824dfd0e68'],
   specialities: ['cec17531-efc8-47e1-a462-c0d478af526d', 'dec17531-efc8-47e1-a462-c0d478af526d']
   sortBy: 'T',
-  offset: 20 
+  offset: 20,
+  noOfReviews: 2
 }
 
 
@@ -83,6 +85,8 @@ Parameters:
        - "L" (sort reviews by lowest rated first)
     
   **offset** (*Optional - defaults to 0*): Integer. Value for offsetting reviews returned (for pagination) 
+  
+  **noOfReviews** (*Optional - defaults to 20*): Integer. Value for number of reviews you want to retrieve - maximum value of 20 - high values will default to 20
   
 
 
@@ -313,4 +317,13 @@ Unsuccessful 400
  ----------------|-------------
  Anaesthetics    | 63db4685-7c24-409d-b561-6db50fc4ccc2
  Intensive Care Medicine | a7cb4b5f-cd14-49fa-9995-1499856d8e8e
+ 
+  ## Rating Colours
+  
+  Rating | Colour
+  -----------------
+  0 =< rating < 2  | #d11b3f
+  2 =< rating < 3 | #f57340
+  3 =< rating < 4 | #17ace3
+  4 =< rating | '#e8b923'
   
