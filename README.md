@@ -321,9 +321,9 @@ Unsuccessful 400
   ## Rating Colours
   
   Rating | Colour
-  -----------------
+  -------|----------
   0 =< rating < 2  | #d11b3f
   2 =< rating < 3 | #f57340
   3 =< rating < 4 | #17ace3
-  4 =< rating | '#e8b923'
+  4 =< rating | #e8b923
   
